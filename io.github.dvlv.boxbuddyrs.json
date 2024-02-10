@@ -40,7 +40,7 @@
             "install -D icons/io.github.dvlv.boxbuddyrs.svg /app/share/icons/hicolor/scalable/apps",
 
             "mkdir /app/icons",
-            "cp icons/io.github.dvlv.boxbuddyrs.svg /app/icons/io.github.dvlv.boxbuddyrs.svg",
+            "cp icons/*.svg /app/icons/",
 
             "cp -r po /app/"
         ],
@@ -52,9 +52,9 @@
         "sources": [{
             "type": "git",
             "url": "https://github.com/Dvlv/BoxBuddyRS",
-            "tag": "1.2.1",
+            "tag": "2.0.0",
             "builddir": true,
-            "commit": "dc00e35587cc72c1d3fa12487db603fd6d518f5b"
+            "commit": "989566f7586e3e4bce84ab54926a84b75b4ceff7"
         },
         "generated-sources.json"
       ]
