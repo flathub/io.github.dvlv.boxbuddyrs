@@ -1,7 +1,7 @@
 {
     "app-id": "io.github.dvlv.boxbuddyrs",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -46,7 +46,7 @@
             "cp -r po /app/",
 
             "mkdir -p /app/share/locale/",
-            "cp -r po/{de_DE,it_IT,uk_UA,ru_RU,pt_BR,es,hi,el} /app/share/locale/",
+            "cp -r po/{de_DE,it_IT,uk_UA,ru_RU,pt_BR,es,hi,el,zh_CN} /app/share/locale/",
 
             "mkdir -p /app/share/glib-2.0/schemas/",
             "install -D io.github.dvlv.boxbuddyrs.gschema.xml /app/share/glib-2.0/schemas/",
@@ -60,9 +60,9 @@
         "sources": [{
             "type": "git",
             "url": "https://github.com/Dvlv/BoxBuddyRS",
-            "tag": "2.2.2",
+            "tag": "2.2.3",
             "builddir": true,
-            "commit": "ee9ed18c5b344d65d5af3c1e07abe1170089e7df"
+            "commit": "aca80f60cdfd3720fdbf7a446e9b8cd79343ba05"
         },
         "generated-sources.json"
       ]
