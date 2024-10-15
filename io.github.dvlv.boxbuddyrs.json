@@ -1,7 +1,7 @@
 {
     "app-id": "io.github.dvlv.boxbuddyrs",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -60,9 +60,9 @@
         "sources": [{
             "type": "git",
             "url": "https://github.com/Dvlv/BoxBuddyRS",
-            "tag": "2.2.13",
+            "tag": "2.3.0",
             "builddir": true,
-            "commit": "fac9aad9b4bc8a5b148e2cd5954ef1b3512cf073"
+            "commit": "fe4b74b52e11b720c8870009bf33db456307a3c2"
         },
         "generated-sources.json"
       ]
