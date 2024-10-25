@@ -46,7 +46,7 @@
             "cp -r po /app/",
 
             "mkdir -p /app/share/locale/",
-            "cp -r po/{cs,nl_NL,de_DE,it_IT,uk_UA,ru_RU,pt_BR,es,hi,el,zh_CN,zh_TW} /app/share/locale/",
+            "cp -r po/{cs,nl_NL,de_DE,it_IT,uk_UA,ru_RU,pt_BR,es,hi,el,zh_CN,zh_TW,pl_PL} /app/share/locale/",
 
             "mkdir -p /app/share/glib-2.0/schemas/",
             "install -D io.github.dvlv.boxbuddyrs.gschema.xml /app/share/glib-2.0/schemas/",
@@ -60,9 +60,9 @@
         "sources": [{
             "type": "git",
             "url": "https://github.com/Dvlv/BoxBuddyRS",
-            "tag": "2.3.0",
+            "tag": "2.3.1",
             "builddir": true,
-            "commit": "fe4b74b52e11b720c8870009bf33db456307a3c2"
+            "commit": "0ac54b853c2d352e30302c3859dd7b7d4b7986cf"
         },
         "generated-sources.json"
       ]
