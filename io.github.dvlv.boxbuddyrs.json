@@ -14,7 +14,7 @@
         "--socket=wayland",
         "--device=dri",
         "--talk-name=org.freedesktop.Flatpak",
-        "--filesystem=xdg-download:rw"
+        "--filesystem=home"
     ],
     "build-options": {
         "append-path": "/usr/lib/sdk/rust-stable/bin"
@@ -60,9 +60,9 @@
         "sources": [{
             "type": "git",
             "url": "https://github.com/Dvlv/BoxBuddyRS",
-            "tag": "2.4.0",
+            "tag": "2.4.1",
             "builddir": true,
-            "commit": "13f1b9f3f3341b060039e7353e42a3a9cf60d884"
+            "commit": "ffa83a4d42b4d62f75de72d18a36235630a51e51"
         },
         "generated-sources.json"
       ]
