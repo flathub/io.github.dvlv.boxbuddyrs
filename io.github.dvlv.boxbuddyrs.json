@@ -6,7 +6,6 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
-    "sdk-version": "23.08",
     "command": "boxbuddy-rs",
     "finish-args": [
         "--share=ipc",
@@ -60,9 +59,8 @@
         "sources": [{
             "type": "git",
             "url": "https://github.com/Dvlv/BoxBuddyRS",
-            "tag": "2.5.3",
-            "builddir": true,
-            "commit": "1c879f74afd5f647d58e0dff813b0adf40c1583b"
+            "tag": "2.5.4",
+            "commit": "822d7b4dda5dbee7fd96560e62a320572e3a1767"
         },
         "generated-sources.json"
       ]
