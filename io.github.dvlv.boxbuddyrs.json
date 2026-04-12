@@ -1,7 +1,7 @@
 {
     "app-id": "io.github.dvlv.boxbuddyrs",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -30,29 +30,17 @@
             "cargo --offline fetch --manifest-path Cargo.toml --verbose",
             "cargo --offline build --release --verbose",
             "install -Dm755 ./target/release/boxbuddy-rs -t /app/bin/",
-
-            "mkdir -p /app/share/applications",
-            "install -D io.github.dvlv.boxbuddyrs.desktop /app/share/applications/",
-
-            "install -Dp -m 644 io.github.dvlv.boxbuddyrs.metainfo.xml /app/share/metainfo/io.github.dvlv.boxbuddyrs.metainfo.xml",
-
-            "mkdir -p /app/share/icons/hicolor/scalable/apps",
-            "install -D icons/io.github.dvlv.boxbuddyrs.svg /app/share/icons/hicolor/scalable/apps",
-
-            "mkdir /app/icons",
-            "cp icons/*.svg /app/icons/",
-
-            "cp -r po /app/",
-
             "mkdir -p /app/share/locale/",
             "cp -r po/{cs,nl_NL,de_DE,it_IT,uk_UA,ru_RU,pt_BR,es,hi,el,zh_CN,zh_TW,pl_PL} /app/share/locale/",
-
-            "mkdir -p /app/share/glib-2.0/schemas/",
-            "install -D io.github.dvlv.boxbuddyrs.gschema.xml /app/share/glib-2.0/schemas/",
+            "install -Dm644 io.github.dvlv.boxbuddyrs.desktop -t /app/share/applications/",
+            "install -Dm644 io.github.dvlv.boxbuddyrs.metainfo.xml -t /app/share/metainfo/",
+            "install -Dm644 icons/io.github.dvlv.boxbuddyrs.svg -t /app/share/icons/hicolor/scalable/apps",
+            "install -Dm644 io.github.dvlv.boxbuddyrs.gschema.xml -t /app/share/glib-2.0/schemas/",
             "glib-compile-schemas /app/share/glib-2.0/schemas"
         ],
         "cleanup": [
             "docs",
+            "*.po",
             "*.sh",
             "scripts"
         ],
