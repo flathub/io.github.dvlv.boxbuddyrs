@@ -47,8 +47,8 @@
         "sources": [{
             "type": "git",
             "url": "https://github.com/Dvlv/BoxBuddyRS",
-            "tag": "2.6.1",
-            "commit": "267433aed7c0496cfdc004a1e5a4974297a88060"
+            "tag": "2.6.2",
+            "commit": "b5fa9a70e5e4e74316ca59ef4a8f07bc605e4e57"
         },
         "generated-sources.json"
       ]
